@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+  <body class="screen">
+    <image class="background">
+
+    <div id="mydiv" class="Welcome">
+
+        <img class="icon" src="Welcome.png"/>
+        <button id="mydivheader" class="move-button"></button>
+        <button id="welcomeClose" class="remove-button"></button>
+        <h1>Welcome to ShortCut OS!</h1>
+        <h2>Made by Ashraf Mahin</h2>
+        <p><i>Check out my other projects from here: <a href="https://ashraf-999.github.io/MyPersonalSiteByAshraf/">Website</a></i></p>
+    </div>
+
+    <div class="Bar">
+        <p>
+            <button id="welcomeOpen" class="text-button">ShortCut OS</button>
+        </p>
+
+        <p id="time">
+            6/21/2023 3:41 PM
+        </p>
+    </div>
+
+    <div class="noteApp">
+        <img id="noteIcon" class="icon" src="Note.png">
+        <p style="margin: 0px; color: rgb(7, 7, 7); -webkit-text-stroke: 0.2px rgb(254, 251, 251); font-weight:bold">Note</p>
+    </div>
+
+    <div id="Note" class="hidden">
+        <p class="head">Note:</p>
+        <button id="Noteheader" class="move-button"></button>
+        <button id="noteClose" class="remove-button"></button>
+        <textarea class="noteInput" placeholder="Write your thougths"></textarea>
+    </div>
+
+    <div class="calApp">
+        <img id="calIcon" class="icon" src="calculator.png">
+        <p style="margin: 0px; color: rgb(7, 7, 7); -webkit-text-stroke: 0.2px rgb(254, 251, 251); font-weight:bold">Calculator</p>
+    </div>
+
+    <div id="Calculator" class="hidden">
+        <p class="head">Calculator:</p>
+        <button id="Calculatorheader" class="move-button"></button>
+        <button id="calClose" class="remove-button"></button>
+
+        <form class="calForm">
+            <label for="number1">
+                <p>Number 1:</p>
+            </label>
+            <input id="number1">
+
+            <label for="operator">
+                <p>Operator:</p>
+            </label>
+            <input id="operator" placeholder="+, -, *, /">
+
+            <label for="number2">
+                <p>Number 2:</p>
+            </label>
+            <input id="number2">
+
+            <button id="calculate" type="button">Calculate</button>
+            <p id="result"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+  
+  </body>
+
+</html>
